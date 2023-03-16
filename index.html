@@ -44,6 +44,9 @@
     background-repeat: no-repeat;
     height: 50rem;
   }
+  #certificates{
+    padding-bottom: 10%;
+  }
   </style>
 </head>
 
@@ -52,7 +55,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-pills fixed-top">
     <div class="container">
-      <a class="navbar-brand nav-link" href="#">Portfolio.</a>
+      <a class="navbar-brand nav-link" href="#">✌ 𝓢𝓱𝓲𝓿𝓪𝓶 𝓢𝓱𝓪𝓻𝓶𝓪 ✌</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -291,27 +294,84 @@
     <div id="" class="container pt-5">
       <div class="row">
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170134.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170134.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170134.png" width="80%" alt="">
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170254.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170254.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170254.png" width="80%" alt="">
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170413.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170413.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170413.png" width="80%" alt="">
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170558.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170558.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170558.png" width="80%" alt="">
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170646.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170646.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170646.png" width="80%" alt="">
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto" src="certificats/Screenshot 2023-03-16 170746.png" width="80%" alt="">
+          <img class="d-block mx-auto" onclick="openImage('certificats/Screenshot 2023-03-16 170746.png')" data-bs-toggle="modal" data-bs-target="#myModal" src="certificats/Screenshot 2023-03-16 170746.png" width="80%" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img id="big-certificate" src="" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Projects -->
+  <div id="projects" class="text-bg-dark">
+    <h1 class="display-4 " style="padding-left: 8%; padding-top: 8%;">Projects</h1>
+    <hr class="bg-dark">
+    <div id="" class="container pt-5">
+      <div class="row">
+        <div class="row" style="margin: 2rem 0;">
+          <div class="col-md-6">
+            <img src="images/project-mockup-example.jpeg" style="width: 100%;" alt="">
+          </div>
+          <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
+            <h2>Instagram Clone</h2>
+            <p>This is semi working clone of instagram, an social media app.
+              Where users are abel to send their post with public and follow the other users.
+            </p>
+            <div class="skills">
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">Firebase</div>
+            </div>
+            <div>
+              <img src="images/icons8-github-48.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin: 2rem 0;">
+          <div class="col-md-6">
+            <img src="images/project-mockup-example.jpeg" style="width: 100%;" alt="">
+          </div>
+          <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
+            <h2>Clima</h2>
+            <p>Clima is weather showing app. which help user to get weather updates of their current location.
+              User can also find weather infomation of their prefferd location.
+            </p>
+            <div class="skills">        
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">Flutter</div>
+              <div class="skills__skill">REST Api</div>
+            </div>
+            <div>
+              <img src="images/icons8-github-48.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
