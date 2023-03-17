@@ -136,10 +136,16 @@
             </tr>
             <tr>
               <td>
-                <button class="btn btn-outline-info"><img src="images/icons8-linkedin-2-32.png" style="width: 20px;"
-                    alt=""> Linkdin</button>
-                <button class="btn btn-outline-secondary"><img src="images/icons8-github-48.png" style="width: 20px;"
-                    alt=""> Github</button>
+                <a href="https://www.linkedin.com/in/shivam-sharma-9290a7217/">
+                  <button class="btn btn-outline-info"><img src="images/icons8-linkedin-2-32.png" style="width: 20px;" alt="">
+                    Linkdin
+                  </button>
+                </a>
+                <a href="https://github.com/shivam-sharma-2000">
+                  <button class="btn btn-outline-secondary"><img src="images/icons8-github-48.png" style="width: 20px;" alt=""> 
+                    Github
+                  </button>
+                </a>
               </td>
             </tr>
           </table>
@@ -315,7 +321,7 @@
     </div>
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog" style="margin-top: 10%;">
       <div class="modal-content">
         <img id="big-certificate" src="" alt="">
       </div>
@@ -331,7 +337,36 @@
       <div class="row">
         <div class="row" style="margin: 2rem 0;">
           <div class="col-md-6">
-            <img src="images/project-mockup-example.jpeg" style="width: 100%;" alt="">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              </div>
+            
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/instagram_clone.jpeg" alt="Los Angeles" class="d-block mx-auto w-50">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/instagram_profile.jpeg" alt="Chicago" class="d-block mx-auto w-50">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/instagram_editProfile.jpeg" alt="New York" class="d-block mx-auto w-50">
+                </div>
+              </div>
+            
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
           </div>
           <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
             <h2>Instagram Clone</h2>
@@ -344,13 +379,38 @@
               <div class="skills__skill">Firebase</div>
             </div>
             <div>
-              <img src="images/icons8-github-48.png" alt="">
+              <a href="https://github.com/shivam-sharma-2000/Instagram_Clone">
+                <img src="images/icons8-github-48.png" alt="">            
+              </a>              
             </div>
           </div>
         </div>
         <div class="row" style="margin: 2rem 0;">
           <div class="col-md-6">
-            <img src="images/project-mockup-example.jpeg" style="width: 100%;" alt="">
+            <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+              </div>
+            
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/weather_home_page.jpeg" alt="Los Angeles" class="d-block mx-auto w-50">
+                </div>
+              </div>
+            
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
           </div>
           <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
             <h2>Clima</h2>
@@ -363,7 +423,9 @@
               <div class="skills__skill">REST Api</div>
             </div>
             <div>
-              <img src="images/icons8-github-48.png" alt="">
+              <a href="https://github.com/shivam-sharma-2000/Clima-weather_app">
+                <img src="images/icons8-github-48.png" alt="">
+              </a>              
             </div>
           </div>
         </div>
