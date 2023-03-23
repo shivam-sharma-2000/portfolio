@@ -8,46 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Portfolio</title>
-  <style>
-    @keyframes scale-in-hor-left {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 0% 0%;
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 0% 0%;
-    opacity: 1;
-  }
-}
-    .scale-in-hor-left {
-	    animation: scale-in-hor-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-
-    .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    background: rgba(153,153,153,0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #777;
-  }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #image{
-    background-image: url("images/project-mockup-example.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 50rem;
-  }
-  #certificates{
-    padding-bottom: 10%;
-  }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -302,7 +263,7 @@
         <img id="big-image" class="" src="" width="50%" alt="specific certificats">
         <button id="big-image-button" class="btn btn-outline btn-close"></button>
       </div>
-      <div class="row">
+      <div class="row ">
         <div class="col-sm-4 p-2 ">
           <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170134.png" width="80%" alt="">
         </div>
@@ -332,7 +293,7 @@
     <div id="" class="container pt-5">
       <div class="row">
         <div class="row" style="margin: 2rem 0;">
-          <div class="col-md-6">
+          <div class="col-md-6 p-2">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
               <!-- Indicators/dots -->
@@ -382,7 +343,7 @@
           </div>
         </div>
         <div class="row" style="margin: 2rem 0;">
-          <div class="col-md-6">
+          <div class="col-md-6 p-2">
             <div id="demo1" class="carousel slide" data-bs-ride="carousel">
 
               <!-- Indicators/dots -->

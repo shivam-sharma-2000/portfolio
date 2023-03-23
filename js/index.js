@@ -16,16 +16,29 @@ window.addEventListener('load', (event) => {
             document.getElementById("big-image-container").style.display = "none";
         })
 
-        var imgItem = document.getElementsByClassName("openImage");
-        console.log(imgItem)
-        for(var i=0; i<imgItem.length; i++){
-            var srcImg = imgItem[i].src;
-            imgItem[i].addEventListener("click", () => {
-                document.getElementById("big-image-container").children[0].src = srcImg;
+        // var imgItem = document.getElementsByClassName("row openImage").children[0];
+        const elements = document.querySelectorAll('.openImage');
+        
+        elements.forEach(element => {
+            console.log(element.src);
+            element.addEventListener("click", () =>  {
+                document.getElementById("big-image-container").children[0].src = element.src;
                 document.getElementById("big-image-container").style.display = "flex";
                 document.getElementById("big-image-container").style.justifyContent = "center";
             })
-        }
+          });
+
+
+
+        // console.log(imgItem)
+        // for(var i=0; i<imgItem.length; i++){
+        //     console.log(imgItem.children[i].children[0].src);
+        //     imgItem.children[i].children[0].addEventListener("click", () => {
+        //         document.getElementById("big-image-container").children[0].src = srcImg;
+        //         document.getElementById("big-image-container").style.display = "flex";
+        //         document.getElementById("big-image-container").style.justifyContent = "center";
+        //     })
+        // }
         
     }
 });
