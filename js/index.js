@@ -1,5 +1,44 @@
-function openImage(img){
-    document.getElementById("big-certificate").src = img;
+// window.onload = (event) => {
+//     console.log('The page has fully loaded');
+
+//     document.getElementById("big-image-button").onclick(() => {
+//         console.log("hello");
+//         document.getElementById("big-image-container").style.display = "none";
+//     })
+// };
+
+window.addEventListener('load', (event) => {
+    console.log('The page has fully loaded');
+    console.log(window.innerWidth);
+    if(window.innerWidth >= 800)
+    {    
+        document.getElementById("big-image-button").addEventListener("click", () => {
+            document.getElementById("big-image-container").style.display = "none";
+        })
+
+        var imgItem = document.getElementsByClassName("openImage");
+        console.log(imgItem)
+        for(var i=0; i<imgItem.length; i++){
+            var srcImg = imgItem[i].src;
+            imgItem[i].addEventListener("click", () => {
+                document.getElementById("big-image-container").children[0].src = srcImg;
+                document.getElementById("big-image-container").style.display = "flex";
+                document.getElementById("big-image-container").style.justifyContent = "center";
+            })
+        }
+        
+    }
+});
+
+function openImage(img){    
+    document.getElementById("big-image-container").children[0].src = img;
+    document.getElementById("big-image-container").style.display = "flex";
+    document.getElementById("big-image-container").style.justifyContent = "center";
+}  
+
+function closeImage(){
+    // console.log("hello");
+    document.getElementById("big-image-container").style.display = "none";
 }
 
 
