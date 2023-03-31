@@ -36,3 +36,29 @@
 #certificates{
     padding-bottom: 10%;
 }
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-text{
+    flex-wrap: wrap;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us{
+    float: right;
+}
+
+.contact-us-mailbox{
+    background-color: white;
+    text-decoration: none;
+}
+
+.my-footer{
+    background-color: black; color: white; padding: 20px;
+}

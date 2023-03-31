@@ -73,16 +73,16 @@
     <hr style="width: 100%; ">
     <div class="container pt-3">
       <div class="row">
-        <div class="col-md-6 pb-5 pt-5 ">
-          <img class="rounded d-block mx-auto" style="width: 50%;" src="images/profile.jpg" alt="">
+        <div class="col-md-6 pb-5 pt-5 details">
+          <img class="rounded" style="width: 50%;" src="images/profile.jpg" alt="">
         </div>
-        <div class="col-md-6 pt-5">
-          <p style="font-size: 20px;"><strong>Shivam Sharma</strong></p>
+        <div class="col-md-6 pt-5 details">
+          <div>
+            <p style="font-size: 1.5rem;"><strong>Shivam Sharma</strong></p>
           <p class="text-secondary">Android Developer / Web Developer</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vero reiciendis
-            officia similique, perspiciatis incidunt qui ipsa? Maiores non error reiciendis doloribus, et a animi neque,
-            beatae iure numquam fuga!</p>
-          <table class="table text-bg-dark table-borderless">
+          <p>Hi, I'm [Your Name], an Android Developer specializing in Java, Kotlin, and Flutter, based in Khandwa, MP. I'm passionate about creating innovative and user-friendly mobile applications that solve real-world problems. With experience in both small utility apps and complex projects, I have a proven track record of delivering high-quality results. Thank you for visiting my portfolio, and I look forward to discussing how I can contribute to your development needs.</p>
+          </div>
+          <!-- <table class="table text-bg-dark table-borderless">
             <tr>
               <td><img class="me-2" src="images/icons8-call-male-30.png" style="width: 20px;" alt="">+91 6266097183
               </td>
@@ -109,7 +109,7 @@
                 </a>
               </td>
             </tr>
-          </table>
+          </table> -->
         </div>
 
 
@@ -260,27 +260,44 @@
     <hr class="bg-dark">
     <div id="" class="container pt-5">
       <div id="big-image-container" style="display: none;">
-        <img id="big-image" class="" src="" width="50%" alt="specific certificats">
+        <img id="big-image" class="" src="" width="45%" alt="specific certificats">
         <button id="big-image-button" class="btn btn-outline btn-close"></button>
       </div>
       <div class="row ">
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170134.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage" src="certificats/Android Development Kotlin.png" width="80%" alt="">
+          </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170254.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage" src="certificats/Android Development Retrofit Kotlin.png" width="80%" alt="">
+          </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170413.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage" src="certificats/Android Programming Kotlin Meta.png" width="80%" alt="">
+          </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170558.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage" src="certificats/Pragramming Fundamentals Kotlin Meta.png" width="80%" alt="">
+          </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage" src="certificats/Screenshot 2023-03-16 170646.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage" src="certificats/Java Basics HackerRank.png" width="80%" alt="">
+          </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <img class="d-block mx-auto openImage"  src="certificats/Screenshot 2023-03-16 170746.png" width="80%" alt="">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage"  src="certificats/SQL Basics HackerRank.png" width="80%" alt="">
+          </a>
+        </div>
+        <div class="col-sm-4 p-2 ">
+          <a href="#certificates">
+            <img class="d-block mx-auto openImage"  src="certificats/Python Crash Course Google.png" width="80%" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -290,10 +307,26 @@
   <div id="projects" class="text-bg-dark">
     <h1 class="display-4 " style="padding-left: 8%; padding-top: 8%;">Projects</h1>
     <hr class="bg-dark">
-    <div id="" class="container pt-5">
+    <div id="" class="container">
       <div class="row">
         <div class="row" style="margin: 2rem 0;">
-          <div class="col-md-6 p-2">
+          <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
+            <h2>Instagram Clone</h2>
+            <p>This is semi working clone of instagram, an social media app.
+              Where users are abel to send their post with public and follow the other users.
+            </p>
+            <div class="skills">
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">Firebase</div>
+            </div>
+            <div>
+              <a href="https://github.com/shivam-sharma-2000/Instagram_Clone">
+                <img src="images/icons8-github-48.png" alt="">            
+              </a>              
+            </div>
+          </div>
+          <div class="col-md-6 p-5">
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
               <!-- Indicators/dots -->
@@ -325,25 +358,10 @@
               </button>
             </div>
           </div>
-          <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
-            <h2>Instagram Clone</h2>
-            <p>This is semi working clone of instagram, an social media app.
-              Where users are abel to send their post with public and follow the other users.
-            </p>
-            <div class="skills">
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">Firebase</div>
-            </div>
-            <div>
-              <a href="https://github.com/shivam-sharma-2000/Instagram_Clone">
-                <img src="images/icons8-github-48.png" alt="">            
-              </a>              
-            </div>
-          </div>
+          
         </div>
         <div class="row" style="margin: 2rem 0;">
-          <div class="col-md-6 p-2">
+          <div class="col-md-6 p-5">
             <div id="demo1" class="carousel slide" data-bs-ride="carousel">
 
               <!-- Indicators/dots -->
@@ -390,6 +408,54 @@
     </div>
   </div>
 
+  <div class="container" style="padding-bottom: 8%; padding-top: 8%;">
+    <h1 class="display-4 ">Contact Me</h1>
+    <div class="row">
+      <div class="col-md-6 contact-us-text ">
+        <h1>Have a question or feedback? Let us know!</h1>
+        <div  class="contact-us-mailbox text-bg-dark  pe-3 ps-3 pt-2 pb-2  rounded">
+          <div class="row">
+            <div class="col details">
+              <img src="images/icons8-mail-account-48.png" width="40px" alt="mail icon">
+            </div>
+            <div class="col">
+              <h6>Mail me at</h6>
+              <a style="text-decoration: none;" href="mailto:88277shiv@gmail.com">
+                <h6>88277shiv@gmail.com</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-3 mt-2 mb-2 bg-white rounded border contact-us">
+        <h2 class="text-center mb-4">Send Me a message</h2>
+        <form style="margin: 0 auto;">
+          <div class="form-group m-3">
+            <input type="text" class="form-control" style="background-color: #F7F6FC;" id="name" placeholder="Full name">
+          </div>
+          <div class="form-group m-3">
+            <input type="email" class="form-control" style="background-color: #F7F6FC;" id="email" placeholder="Email address">
+          </div>
+          <div class="form-group m-3">
+            <textarea class="form-control" style="background-color: #F7F6FC;" id="message" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block ms-3">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="my-footer">
+    <div class="row mb-2 details">
+      <img class="me-2" src="images/icons8-linkedin-2-32.png" style="width: 50px;" alt="">
+      <img src="images/icons8-github-48.png" style="width: 50px;" alt="">
+    </div>
+    <p style="text-align: center; margin: 0px;">+91 626609718 | Khandwa, M.P.</p>
+    <p style="text-align: center; margin: 0px;">Made by Shivam with love ❤</p>
+  </footer>
+
+
+  
   <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
