@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,6 +48,11 @@
               <button class="btn btn-dark">Projects</button>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">
+              <button class="btn btn-dark">Contact Me</button>
+            </a>
+          </li>
 
         </ul>
       </div>
@@ -73,10 +79,10 @@
     <hr style="width: 100%; ">
     <div class="container pt-3">
       <div class="row">
-        <div class="col-md-6 pb-5 pt-5 details">
+        <div class="col-md-6 pb-5 pt-5 center">
           <img class="rounded" style="width: 50%;" src="images/profile.jpg" alt="">
         </div>
-        <div class="col-md-6 pt-5 details">
+        <div class="col-md-6 pt-5 center">
           <div>
             <p style="font-size: 1.5rem;"><strong>Shivam Sharma</strong></p>
           <p class="text-secondary">Android Developer / Web Developer</p>
@@ -97,12 +103,12 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.linkedin.com/in/shivam-sharma-9290a7217/">
+                
                   <button class="btn btn-outline-info"><img src="images/icons8-linkedin-2-32.png" style="width: 20px;" alt="">
                     Linkdin
                   </button>
                 </a>
-                <a href="https://github.com/shivam-sharma-2000">
+                
                   <button class="btn btn-outline-secondary"><img src="images/icons8-github-48.png" style="width: 20px;" alt=""> 
                     Github
                   </button>
@@ -257,46 +263,56 @@
   <!-- Certificates -->
   <div id="certificates" class="text-bg-light">
     <h1 class="display-4 " style="padding-left: 8%; padding-top: 8%;">Certificates</h1>
-    <hr class="bg-dark">
-    <div id="" class="container pt-5">
+    <hr id="hr-line" class="bg-dark">
+    <div class="container pt-5">
       <div id="big-image-container" style="display: none;">
         <img id="big-image" class="" src="" width="45%" alt="specific certificats">
         <button id="big-image-button" class="btn btn-outline btn-close"></button>
       </div>
       <div class="row ">
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage" src="certificats/Android Development Kotlin.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage" src="certificats/Android Development Retrofit Kotlin.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage" src="certificats/Android Programming Kotlin Meta.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage" src="certificats/Pragramming Fundamentals Kotlin Meta.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage" src="certificats/Java Basics HackerRank.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage"  src="certificats/SQL Basics HackerRank.png" width="80%" alt="">
           </a>
         </div>
         <div class="col-sm-4 p-2 ">
-          <a href="#certificates">
+          <a href="#hr-line">
             <img class="d-block mx-auto openImage"  src="certificats/Python Crash Course Google.png" width="80%" alt="">
+          </a>
+        </div>
+        <div class="col-sm-4 p-2 ">
+          <a href="#hr-line">
+            <img class="d-block mx-auto openImage"  src="certificats/AWS Cloud Masterclass.png" width="80%" alt="">
+          </a>
+        </div>
+        <div class="col-sm-4 p-2 ">
+          <a href="#hr-line">
+            <img class="d-block mx-auto openImage"  src="certificats/AWS Cloud practitioner Essential.png" width="80%" alt="">
           </a>
         </div>
       </div>
@@ -408,28 +424,35 @@
     </div>
   </div>
 
-  <div class="container" style="padding-bottom: 8%; padding-top: 8%;">
+  <!-- Contact Me Page -->
+  <div id="contact-me" class="container" style="padding-bottom: 8%; padding-top: 8%;">
     <h1 class="display-4 ">Contact Me</h1>
-    <div class="row">
-      <div class="col-md-6 contact-us-text ">
-        <h1>Have a question or feedback? Let us know!</h1>
-        <div  class="contact-us-mailbox text-bg-dark  pe-3 ps-3 pt-2 pb-2  rounded">
-          <div class="row">
-            <div class="col details">
-              <img src="images/icons8-mail-account-48.png" width="40px" alt="mail icon">
-            </div>
-            <div class="col">
-              <h6>Mail me at</h6>
-              <a style="text-decoration: none;" href="mailto:88277shiv@gmail.com">
-                <h6>88277shiv@gmail.com</h6>
-              </a>
-            </div>
-          </div>
-        </div>
+    <div class="row center">
+      <div class="col-md-6">
+        <h1 class="contact-us-text">Have a question or feedback? Let us know!</h1>
+        <img src="images/contact-me.png" width="80%" class="d-block mx-auto">
       </div>
-      <div class="col-md-6 p-3 mt-2 mb-2 bg-white rounded border contact-us">
-        <h2 class="text-center mb-4">Send Me a message</h2>
-        <form style="margin: 0 auto;">
+      <div class="col-md-6 contact-us">
+        <iframe
+          style="margin: 0 auto;"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfXBGQBZLiSJv0p2XsftWl7hRXXlUpHkqELesoje1FPP09bMw/viewform?embedded=true"
+          width="600px"
+          height="780px"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+
+
+        <!-- <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+
+        <!-- <form style="margin: 0 auto;" 
+        action="mailto: 88277shiv@gmail.com"
+        method="post"
+        name="email-form"
+        >
           <div class="form-group m-3">
             <input type="text" class="form-control" style="background-color: #F7F6FC;" id="name" placeholder="Full name">
           </div>
@@ -439,21 +462,84 @@
           <div class="form-group m-3">
             <textarea class="form-control" style="background-color: #F7F6FC;" id="message" rows="5" placeholder="Enter your message"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-block ms-3">Send message</button>
-        </form>
+          <button type="submit" value="submit" class="btn btn-primary btn-block ms-3">Send message</button>
+        </form> -->
       </div>
     </div>
   </div>
-  
-  <footer class="my-footer">
-    <div class="row mb-2 details">
-      <img class="me-2" src="images/icons8-linkedin-2-32.png" style="width: 50px;" alt="">
-      <img src="images/icons8-github-48.png" style="width: 50px;" alt="">
-    </div>
-    <p style="text-align: center; margin: 0px;">+91 626609718 | Khandwa, M.P.</p>
-    <p style="text-align: center; margin: 0px;">Made by Shivam with love ❤</p>
-  </footer>
 
+  <!-- Footer -->
+<footer class="text-center text-lg-start text-bg-dark">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom center">
+    <!-- Left -->
+    <div class="d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="d-block">
+      <a style="text-decoration: none;" class="me-2 text-reset" href="https://github.com/shivam-sharma-2000">
+        <span style="height: 25px; width: 25px;" class="iconify" data-icon="mdi:github"></span>
+      </a>
+      
+      <a style="text-decoration: none;" class="me-2 text-reset" href="https://www.linkedin.com/in/shivam-sharma-9290a7217/">
+        <span style="height: 25px; width: 25px;" class="iconify" data-icon="mdi:linkedin"></span>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="border-bottom">
+    <div class="container text-center text-md-start mt-5 mb-5">
+      
+      <h6 class="text-uppercase fw-bold mb-5 center">Contact</h6>
+      <!-- Grid row -->
+      <div class="row mt-3 center text-center">
+        <!-- Grid column -->
+        <div class="col-md-4">
+          <p>
+            <span style="height: 20px; width: 20px;" class="iconify me-3" data-icon="material-symbols:phone-android-rounded"></span>
+            +91-6266097183
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4">
+          <p>
+            <span style="height: 20px; width: 20px;" class="iconify me-3" data-icon="ic:outline-email"></span>
+            <a href="mailto:88277shiv@gmail.com" style="text-decoration: none;" class="text-light">88277shiv@gmail.com</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4">
+          <!-- Links -->
+          <p>
+            <span style="height: 20px; width: 20px;" class="iconify me-3" data-icon="material-symbols:home-outline-rounded"></span>
+            Khandwa, MP, India
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2023 Copyright:
+    <p class="text-reset fw-bold">Made by Shivam with love ❤</p>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
   
   <script src="js/index.js"></script>
