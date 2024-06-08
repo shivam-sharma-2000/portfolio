@@ -17,7 +17,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-pills fixed-top">
     <div class="container">
-      <a class="navbar-brand nav-link" href="#">𝓢𝓱𝓲𝓿𝓪𝓶 𝓢𝓱𝓪𝓻𝓶𝓪</a>
+      <a class="navbar-brand nav-link" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -69,9 +69,14 @@
   <!-- Home Page -->
   <div class="container " style="padding-top: 15%; padding-bottom: 15%;">
     <div class="row">
-      <div class="col-md-6  text-center" style="padding-top: 10%;">
+      <div class="col-md-6  text-md-start" style="padding-top: 10%;">
+      
         <h1 class="h1 scale-in-hor-left">Hi, I am <span class="text-warning">Shivam Sharma</span></h1>
-        <h3 class="text-secondary scale-in-hor-left">I'm Android Developer</h3>
+        <h3 class="text-secondary scale-in-hor-left">I'am
+          <a class="typewrite" style="text-align: start ;text-decoration: none;" data-period="100" data-type='[ "An Application Developer", "Java FullStack Developer", "Software Developer", "I Love to Develop." ]'>
+            <span class="wrap"></span>
+          </a>
+        </h3>
       </div>
       <div class="col-md-6">
         <img class="" src="images/background.png" style="width: 100%; height: auto;" alt="">
@@ -114,10 +119,10 @@
 
         <div id="accordion" class="text-dark col-md-6 pb-5">
           <h4 class="pb-3">Educational Journey</h4>
-          <div class="card">
+          <div class="card mb-2">
             <div class="card-header" data-bs-toggle="collapse" href="#collapseOne">
               <a class="btn">
-                Master of Computer Application ( 2021-Ongoing )
+                Master of Computer Application ( 2021-2023 )
               </a>
             </div>
             <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
@@ -128,7 +133,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card mb-2">
             <div class="card-header" data-bs-toggle="collapse" href="#collapseTwo">
               <a class="collapsed btn">
                 Bachelor of Science (Computer Science) ( 2017-2020 )
@@ -174,10 +179,26 @@
 
         <div id="accordion1" class="text-dark col-md-6">
           <h4 class="pb-3">Internship & Work Experience</h4>
+          <div class="card mb-2" >
+            <div class="card-header" data-bs-toggle="collapse" href="#collapseFive">
+              <a class="btn">
+                Android Developer ( July 2023- Ongoing )
+              </a>
+            </div>
+            <div id="collapseFive" class="collapse show" data-bs-parent="#accordion1">
+              <div class="card-body">
+                <p><strong>Osswal Infosystem Pvt. Ltd</strong>, Indore</p>
+                <p>Spearheading the development and design of a CRM (Customer Relationship Management) application.</p>
+                <p>Successfully delivered <b>2 production-ready applications</b> and actively contributed to team projects.</p>
+                <p>Proficiently managed the deployment process for applications on both the Google Play Store and Apple App Store.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="card">
             <div class="card-header" data-bs-toggle="collapse" href="#collapseFive">
               <a class="btn">
-                Android Developer Intern ( sep 2022- Ongoing )
+                Android Developer Intern ( Sep 2022- March 2023 )
               </a>
             </div>
             <div id="collapseFive" class="collapse show" data-bs-parent="#accordion1">
@@ -208,17 +229,20 @@
           <div class="skills">
             <div class="skills__skill">Java</div>
             <div class="skills__skill">Android</div>
-            <div class="skills__skill">Kotlin</div>
             <div class="skills__skill">Flutter</div>
+            <div class="skills__skill">Spring Boot</div>
+            <div class="skills__skill">MicroService</div>
+            <div class="skills__skill">Docker</div>
             <div class="skills__skill">Firebase</div>
+            <div class="skills__skill">Kotlin</div>
             <div class="skills__skill">Sqlite</div>
             <div class="skills__skill">HTML</div>
             <div class="skills__skill">CSS</div>
             <div class="skills__skill">JavaScript</div>
             <div class="skills__skill">Mysql</div>
             <div class="skills__skill">React</div>
-            <div class="skills__skill">Node</div>
-            <div class="skills__skill">Express</div>
+            <!-- <div class="skills__skill">Node</div> -->
+            <!-- <div class="skills__skill">Express</div> -->
             <div class="skills__skill">Python</div>
           </div>
 
@@ -230,6 +254,8 @@
 
           <div class="skills">
             <div class="skills__skill">Android Studio</div>
+            <div class="skills__skill">Eclips</div>
+            <div class="skills__skill">Docker Hub</div>
             <div class="skills__skill">VS Code</div>
             <div class="skills__skill">Github</div>
             <div class="skills__skill">Figma</div>
@@ -310,6 +336,45 @@
     <hr class="bg-dark">
     <div id="" class="container">
       <div class="row">
+        
+        <div class="row" style="margin: 2rem 0;">
+          <div class="col-md-6 p-5">
+            <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Chess_Project_SS.png" alt="" class="d-block mx-auto w-50">
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
+            <h2>Chess Game</h2>
+            <p>Responsive and intuitive chessboard interface.</p>
+            <p>ReactJS for the frontend development, State management using React Hooks.</p>
+            <div class="skills">
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">JS</div>
+              <div class="skills__skill">CSS</div>
+            </div>
+            <div>
+              <a href="https://shivam-sharma-2000.github.io/chess_game/" target="_blank">
+                <img src="images/icons8-github-48.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="row" style="margin: 2rem 0;">
           <div class="col-md-6 " style="display: flex; flex-direction: column; justify-content: center;">
             <h2>Instagram Clone</h2>
@@ -322,7 +387,7 @@
               <div class="skills__skill">Firebase</div>
             </div>
             <div>
-              <a href="https://github.com/shivam-sharma-2000/Instagram_Clone">
+              <a href="https://github.com/shivam-sharma-2000/Instagram_Clone" target="_blank">
                 <img src="images/icons8-github-48.png" alt="">
               </a>
             </div>
@@ -332,7 +397,7 @@
               <!-- The slideshow/carousel -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="images/instagram_clone.jpeg" alt="" class="d-block mx-auto w-50">
+                  <img src="images/instagram_clone.jpeg" alt="" class="d-block mx-auto w-50" >
                 </div>
                 <div class="carousel-item">
                   <img src="images/instagram_profile.jpeg" alt="" class="d-block mx-auto w-50">
@@ -384,7 +449,7 @@
               <div class="skills__skill">REST Api</div>
             </div>
             <div>
-              <a href="https://github.com/shivam-sharma-2000/Clima-weather_app">
+              <a href="https://github.com/shivam-sharma-2000/Clima-weather_app" target="_blank">
                 <img src="images/icons8-github-48.png" alt="">
               </a>
             </div>
