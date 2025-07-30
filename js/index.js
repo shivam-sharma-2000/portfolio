@@ -43,18 +43,22 @@ window.addEventListener('load', (event) => {
     }
 });
 
-function openImage(img){    
-    document.getElementById("big-image-container").children[0].src = img;
-    document.getElementById("big-image-container").style.display = "flex";
-    document.getElementById("big-image-container").style.justifyContent = "center";
-}  
+const certificateModal = document.getElementById('certificateModal');
+  certificateModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget; // Button that triggered the modal
+    const imageSrc = button.getAttribute('data-img');
+    const title = button.getAttribute('data-title');
 
-function closeImage(){
-    // console.log("hello");
-    document.getElementById("big-image-container").style.display = "none";
-}
+    // Update modal content
+    const modalImage = certificateModal.querySelector('#modalCertificateImg');
+    const modalTitle = certificateModal.querySelector('#certificateModalLabel');
+    const downloadLink = certificateModal.querySelector('#downloadCertificate');
 
-
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    downloadLink.href = imageSrc;
+  });
 
 
 
